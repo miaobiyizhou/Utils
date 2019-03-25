@@ -1,6 +1,6 @@
 /**
 *获取浏览器窗口的尺寸
-/
+*/
 function getWindHeightAndWidth() {
     var winWidth = 0, winHeight = 0;
     //获取窗口宽度
