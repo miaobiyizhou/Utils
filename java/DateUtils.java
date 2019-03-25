@@ -17,7 +17,7 @@ public class DateUtils {
    * 获取当前日期
    * 
    * 
-   * @return
+   * @return 当前日期字符串
    * 
    */
   public static String getCurrentDate() {
@@ -31,7 +31,7 @@ public class DateUtils {
    * 获取当前日期时间
    * 
    * 
-   * @return
+   * @return 返回当前时间字符串
    * 
    */
   public static String getCurrentDateTime() {
@@ -44,8 +44,8 @@ public class DateUtils {
   /**
    * 获取当前日期时间
    * 
-   * 
-   * @return
+   * @param Dateformat 日期格式
+   * @return 放回获取的 日期格式字符串
    * 
    */
   public static String getCurrentDateTime(String Dateformat) {
@@ -55,6 +55,11 @@ public class DateUtils {
     return datestr;
   }
  
+ /**
+ * 日期转换为末日字符格式
+ * @param data 转换的日期
+ * return dataStr 返回日期字符串
+ */
   public static String dateToDateTime(Date date) {
     String datestr = null;
     SimpleDateFormat df = new SimpleDateFormat(DateUtils.DATE_TIME_FORMAT);
